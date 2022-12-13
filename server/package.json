@@ -1,0 +1,23 @@
+{
+  "name": "resumeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js 4001",
+    "dev": "node server.js 4001",
+    "prod": "node server.js"
+  },
+  "author": "Verto Studio LLC",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
