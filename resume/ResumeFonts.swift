@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 ///Not trying to get too fancy with these for now
 extension UIFont {
@@ -33,5 +34,28 @@ extension UIFont {
 
   static var resumeSkillName: UIFont {
     UIFont.init(name: "Apple SD Gothic Neo Bold", size: 12) ?? .resumeMissingFont
+  }
+}
+
+///SwiftUI convenience
+extension Font {
+  static var resumeTitle: Font {
+    Font(UIFont.resumeTitle)
+  }
+  
+  static var resumeSubtitle: Font {
+    Font(UIFont.resumeSubtitle)
+  }
+  
+  static var resumeBody: Font {
+    Font(UIFont.resumeBody)
+  }
+  
+  static var resumeSkill: Font {
+    Font(UIFont.resumeSkill)
+  }
+
+  static var resumeSkillName: Font {
+    Font(UIFont.resumeSkillName)
   }
 }

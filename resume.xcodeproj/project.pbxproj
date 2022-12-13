@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270A46F7294907EE00030EE4 /* ResumeTitleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A46F6294907EE00030EE4 /* ResumeTitleCardView.swift */; };
+		270A46FC29490A8700030EE4 /* ResumeBlurbCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A46FB29490A8700030EE4 /* ResumeBlurbCardView.swift */; };
+		270A46FE29490B1600030EE4 /* ResumeViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A46FD29490B1600030EE4 /* ResumeViewModifiers.swift */; };
+		270A470029490C7F00030EE4 /* ResumeAddressContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A46FF29490C7F00030EE4 /* ResumeAddressContactCardView.swift */; };
+		270A470229490EA600030EE4 /* ResumePublishedAppsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A470129490EA600030EE4 /* ResumePublishedAppsCardView.swift */; };
+		270A47042949119F00030EE4 /* ResumeSkillsetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A47032949119F00030EE4 /* ResumeSkillsetCardView.swift */; };
+		270A4706294914B500030EE4 /* ResumeEducationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A4705294914B500030EE4 /* ResumeEducationCardView.swift */; };
+		270A4708294916F100030EE4 /* ResumeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A4707294916F100030EE4 /* ResumeListView.swift */; };
 		27BCC3332947EA5E00043121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCC3322947EA5E00043121 /* AppDelegate.swift */; };
 		27BCC3352947EA5E00043121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCC3342947EA5E00043121 /* SceneDelegate.swift */; };
 		27BCC3372947EA5E00043121 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCC3362947EA5E00043121 /* ResumeViewController.swift */; };
@@ -43,6 +51,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270A46F6294907EE00030EE4 /* ResumeTitleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTitleCardView.swift; sourceTree = "<group>"; };
+		270A46FB29490A8700030EE4 /* ResumeBlurbCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBlurbCardView.swift; sourceTree = "<group>"; };
+		270A46FD29490B1600030EE4 /* ResumeViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewModifiers.swift; sourceTree = "<group>"; };
+		270A46FF29490C7F00030EE4 /* ResumeAddressContactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeAddressContactCardView.swift; sourceTree = "<group>"; };
+		270A470129490EA600030EE4 /* ResumePublishedAppsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumePublishedAppsCardView.swift; sourceTree = "<group>"; };
+		270A47032949119F00030EE4 /* ResumeSkillsetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeSkillsetCardView.swift; sourceTree = "<group>"; };
+		270A4705294914B500030EE4 /* ResumeEducationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeEducationCardView.swift; sourceTree = "<group>"; };
+		270A4707294916F100030EE4 /* ResumeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeListView.swift; sourceTree = "<group>"; };
 		27BCC32F2947EA5E00043121 /* resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BCC3322947EA5E00043121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27BCC3342947EA5E00043121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +110,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270A46F5294907C200030EE4 /* view-swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				270A46FD29490B1600030EE4 /* ResumeViewModifiers.swift */,
+				270A46F6294907EE00030EE4 /* ResumeTitleCardView.swift */,
+				270A46FB29490A8700030EE4 /* ResumeBlurbCardView.swift */,
+				270A46FF29490C7F00030EE4 /* ResumeAddressContactCardView.swift */,
+				270A470129490EA600030EE4 /* ResumePublishedAppsCardView.swift */,
+				270A47032949119F00030EE4 /* ResumeSkillsetCardView.swift */,
+				270A4705294914B500030EE4 /* ResumeEducationCardView.swift */,
+				270A4707294916F100030EE4 /* ResumeListView.swift */,
+			);
+			path = "view-swiftui";
+			sourceTree = "<group>";
+		};
 		27BCC3262947EA5E00043121 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +149,8 @@
 				27BCC3792948539100043121 /* services */,
 				27BCC37629484BDA00043121 /* model */,
 				27BCC34F2947F25700043121 /* view model */,
-				27BCC3462947EAC000043121 /* view */,
+				270A46F5294907C200030EE4 /* view-swiftui */,
+				27BCC3462947EAC000043121 /* view-uikit */,
 				27BCC3322947EA5E00043121 /* AppDelegate.swift */,
 				27BCC3342947EA5E00043121 /* SceneDelegate.swift */,
 				27BCC34B2947EFE900043121 /* ResumeColors.swift */,
@@ -133,7 +165,7 @@
 			path = resume;
 			sourceTree = "<group>";
 		};
-		27BCC3462947EAC000043121 /* view */ = {
+		27BCC3462947EAC000043121 /* view-uikit */ = {
 			isa = PBXGroup;
 			children = (
 				27BCC3542947F2DF00043121 /* cells */,
@@ -142,7 +174,7 @@
 				27BCC3472947EAE700043121 /* ResumeView.swift */,
 				27BCC3492947EC0900043121 /* NiceGradientView.swift */,
 			);
-			path = view;
+			path = "view-uikit";
 			sourceTree = "<group>";
 		};
 		27BCC34F2947F25700043121 /* view model */ = {
@@ -337,15 +369,19 @@
 				27BCC36F294813DC00043121 /* ResumeSkillsetCardCell.swift in Sources */,
 				27BCC3752948471400043121 /* ResumeEducationCardCell.swift in Sources */,
 				27BCC34C2947EFE900043121 /* ResumeColors.swift in Sources */,
+				270A46FE29490B1600030EE4 /* ResumeViewModifiers.swift in Sources */,
 				27BCC3372947EA5E00043121 /* ResumeViewController.swift in Sources */,
 				27BCC34E2947F1C700043121 /* ResumeTableViewController.swift in Sources */,
+				270A46F7294907EE00030EE4 /* ResumeTitleCardView.swift in Sources */,
 				27BCC3332947EA5E00043121 /* AppDelegate.swift in Sources */,
+				270A470029490C7F00030EE4 /* ResumeAddressContactCardView.swift in Sources */,
 				27BCC35C2948010300043121 /* ResumeAddressContactCardViewModel.swift in Sources */,
 				27BCC36929480C5100043121 /* ResumePublishedAppsCardCell.swift in Sources */,
 				27BCC38129485C3F00043121 /* ServiceContainer.swift in Sources */,
 				27BCC3712948164900043121 /* AttributedString+Utils.swift in Sources */,
 				27BCC36529480A3900043121 /* ResumeBlurbCardCell.swift in Sources */,
 				27BCC34A2947EC0900043121 /* NiceGradientView.swift in Sources */,
+				270A47042949119F00030EE4 /* ResumeSkillsetCardView.swift in Sources */,
 				27BCC363294809D600043121 /* ResumeBlurbCardViewModel.swift in Sources */,
 				27BCC3532947F2AB00043121 /* ResumeTitleCardViewModel.swift in Sources */,
 				27BCC3352947EA5E00043121 /* SceneDelegate.swift in Sources */,
@@ -353,14 +389,18 @@
 				27BCC36D294813AB00043121 /* ResumeSkillsetCardViewModel.swift in Sources */,
 				27BCC37F2948588C00043121 /* ErrorService.swift in Sources */,
 				27BCC35A2947F65500043121 /* ResumeCell.swift in Sources */,
+				270A46FC29490A8700030EE4 /* ResumeBlurbCardView.swift in Sources */,
 				27BCC36729480BEE00043121 /* ResumePublishedAppsCardViewModel.swift in Sources */,
 				27BCC3512947F29400043121 /* ResumeViewModel.swift in Sources */,
+				270A470229490EA600030EE4 /* ResumePublishedAppsCardView.swift in Sources */,
 				27BCC3482947EAE700043121 /* ResumeView.swift in Sources */,
 				27BCC373294846F800043121 /* ResumeEducationCardViewModel.swift in Sources */,
 				27BCC37B2948539700043121 /* ResumeService.swift in Sources */,
 				27BCC37829484C5800043121 /* ResumeModel.swift in Sources */,
 				27BCC37D294853A300043121 /* NetworkService.swift in Sources */,
 				27BCC3562947F2EA00043121 /* ResumeTitleCardCell.swift in Sources */,
+				270A4706294914B500030EE4 /* ResumeEducationCardView.swift in Sources */,
+				270A4708294916F100030EE4 /* ResumeListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

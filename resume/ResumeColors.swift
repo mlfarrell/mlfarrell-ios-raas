@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 extension UIColor {
   static var resumeBlack: UIColor {
@@ -23,5 +24,24 @@ extension UIColor {
 
   static var resumeWhite: UIColor {
     UIColor(white: 0.92, alpha: 1.0)
+  }
+}
+
+//SwiftUI convenience
+extension Color {
+  static var resumeBlack: Color {
+    Color(uiColor: .resumeBlack)
+  }
+  
+  static var resumeDarkGrey: Color {
+    Color(uiColor: .resumeDarkGrey)
+  }
+
+  static var resumeLightGrey: Color {
+    Color(uiColor: .resumeLightGrey)
+  }
+
+  static var resumeWhite: Color {
+    Color(uiColor: .resumeWhite)
   }
 }

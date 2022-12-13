@@ -13,9 +13,10 @@ struct ResumePublishedAppsCardViewModel : ResumeViewModel {
     "ResumePublishedAppsCardCell"
   }
   
-  struct PublishedApp {
+  struct PublishedApp: Identifiable {
     let name: String
-    let url: URL?
+    let url: URL?    
+    var id: String { name }
   }
   
   let title: String

@@ -16,6 +16,7 @@ class ErrorService {
     let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Ok", style: .default))
     
+    guard UIApplication.shared.keyWindow?.rootViewController?.presentedViewController == nil else { return }
     UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true)
   }
 }

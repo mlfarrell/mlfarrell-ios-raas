@@ -46,6 +46,7 @@ class ResumeTableViewController : UITableViewController {
   override func didMove(toParent parent: UIViewController?) {
     super.didMove(toParent: parent)
     
+    guard parent != nil else { return }    
     tableView.snp.removeConstraints()
     tableView.snp.makeConstraints { make in
       make.top.bottom.equalToSuperview()

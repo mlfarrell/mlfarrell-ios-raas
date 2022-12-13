@@ -13,19 +13,23 @@ struct ResumeEducationCardViewModel : ResumeViewModel {
     "ResumeEducationCardCell"
   }
   
-  struct Education {
+  struct Education: Identifiable {
     let school: String
     let city: String
     let state: String
     let degree: String
     let field: String
     let date: Date
+    
+    var id: String { school }
   }
   
-  struct Honor {
+  struct Honor: Identifiable {
     let membership: String
     let chapter: String?
     let society: String
+    
+    var id: String { society }
   }
   
   let title: String

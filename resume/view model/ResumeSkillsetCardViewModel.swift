@@ -13,9 +13,10 @@ struct ResumeSkillsetCardViewModel : ResumeViewModel {
     "ResumeSkillsetCardCell"
   }
   
-  struct Skillset {
+  struct Skillset: Identifiable {
     let type: String
     let skills: [String]
+    var id: String { type }
   }
   
   let title: String
