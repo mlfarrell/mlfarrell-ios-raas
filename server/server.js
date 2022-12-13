@@ -10,8 +10,6 @@ const cors = require('cors');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-//Web-site routes (only accessible by PHP front-end code)/////////////////////////////////////////////////////
 const router = express.Router();
 const routes = require('./api/routes/resume');
 

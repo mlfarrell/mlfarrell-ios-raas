@@ -3,8 +3,8 @@
 const fs = require('fs');
 
 module.exports = class ResumeController {
-	static title(req, res) {
-    const reqParams = req.query;						
+  static title(req, res) {
+    const reqParams = req.query;            
     
     //console.log(JSON.stringify(reqParams));
         
@@ -16,10 +16,10 @@ module.exports = class ResumeController {
       role: "Lead iOS Engineer",
       description: "I am an expert in the field of Agile mobile application development, modern real-time graphics, data visualization, GPU computing, and video game development. I am formally trained in computer science and modernized software engineering practices with a further specialization in Swift, Objective-C, C++, Apple, Windows & LINUX systems. I’ve helped small teams (up to 5 engineers) in the iOS space navigate complex deliveries through several leadership roles."
     });
-	}	
-	
-	static contact(req, res) {
-    const reqParams = req.query;						
+  }  
+  
+  static contact(req, res) {
+    const reqParams = req.query;            
     
     //not putting my actual contact info on this repo
     res.json({
@@ -33,9 +33,9 @@ module.exports = class ResumeController {
         zip: "90210"      
       }     
     });
-	}	
-	
-	static apps(req, res) {
+  }  
+  
+  static apps(req, res) {
     res.json({
       title: "Published Applications",
       apps: [
@@ -45,10 +45,10 @@ module.exports = class ResumeController {
         { name: "War War", url:  "https://apps.apple.com/us/app/war-war/id1518435998?mt=12" },
         { name: "Espresso-C", url:  "https://apps.apple.com/us/app/espresso-c/id916506440?mt=12" }
       ]
-    });	
-	}
-	
-	static skills(req, res) {
+    });  
+  }
+  
+  static skills(req, res) {
     res.json({
       title: "Skill Set",
       skillsets: [
@@ -59,10 +59,10 @@ module.exports = class ResumeController {
         { name: "Environments", skills: [ "Xcode","nodeJS","Android Studio (NDK)","AWS" ] },
         { name: "Devices", skills: [ "iPad", "iPhone", "Hololens", "HTC Vive", "Quest" ] }
       ]
-    });		
-	}
-	
-	static education(req, res) {
+    });    
+  }
+  
+  static education(req, res) {
     res.json({
       title: "Education",
       schools: [
@@ -74,8 +74,8 @@ module.exports = class ResumeController {
         { membership: "Founding Member", chapter: "Theta-Xi Chapter, ", society: "Sigma Pi Fraternity International" },
         { membership: "Member", chapter: null, society: "Theta Tau Professional Engineering Fraternity" }
       ]
-    });			
-	}
+    });      
+  }
 };
 
 
