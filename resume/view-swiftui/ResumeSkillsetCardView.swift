@@ -32,7 +32,8 @@ struct ResumeSkillsetCardView: View {
           ForEach(viewModel.skills) { skillset in
             HStack(spacing: 0) {
               ForEach(skillset.skills) { skill in
-                Text("\(skill), ")
+                let c = (skill != skillset.skills.last) ? ", " : ""
+                Text("\(skill)\(c)")
                   .font(.resumeSkillName)
                   .padding(.bottom, 3)
                   .lineLimit(1)
