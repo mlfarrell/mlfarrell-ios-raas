@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@MainActor
 class ErrorService {    
   func handlePossible(error: Error?) {
     guard let error else { return }

@@ -35,6 +35,7 @@ struct ResumePublishedAppsCardView: View {
     .wrapped(with: 16)
   }
   
+  @MainActor
   func visitSite(url: URL?) {
     guard let url else { return }
     UIApplication.shared.open(url)

@@ -58,3 +58,31 @@ class ResumeEducationCardCell: ResumeCell {
     }
   }
 }
+
+fileprivate extension ResumeEducationCardViewModel {
+  private var schoolsParagraphStyle: NSParagraphStyle {
+    let style = NSMutableParagraphStyle()
+    
+    style.alignment = .center
+    style.lineSpacing = 4.0
+    return style
+  }
+  
+  var educationString: NSAttributedString {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy"
+    
+    let schoolsString = schools.map {
+      "\($0.school), \($0.city), \($0.state)\n\($0.degree) in \($0.field) (\(dateFormatter.string(from: $0.date)))"
+    }.joined(separator: "\n\n")
+    
+    let honorsString = honors.map {
+      "\($0.membership), \($0.chapter ?? "") \($0.society)"
+    }.joined(separator: "\n")
+    
+    return NSAttributedString(string: schoolsString + "\n\n" + honorsString, attributes: [
+      .font: UIFont.resumeBody,
+      .paragraphStyle: schoolsParagraphStyle
+    ])
+  }
+}

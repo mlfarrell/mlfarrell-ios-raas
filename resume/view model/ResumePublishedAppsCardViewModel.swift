@@ -23,26 +23,6 @@ struct ResumePublishedAppsCardViewModel : ResumeViewModel {
   let apps: [PublishedApp]
 }
 
-extension ResumePublishedAppsCardViewModel {
-  private var appsParagraphStyle: NSParagraphStyle {
-    let style = NSMutableParagraphStyle()
-    
-    style.lineSpacing = 5.5
-    return style
-  }
-
-  var appsString: NSAttributedString {
-    let appsStr = apps.map {
-      "\($0.name) - \($0.url?.description ?? "")"
-    }.joined(separator: "\n")
-    
-    return NSAttributedString(string: appsStr, attributes: [
-      .font: UIFont.resumeBody,
-      .paragraphStyle: appsParagraphStyle
-    ])
-  }
-}
-
 //network model to view model
 extension ResumePublishedAppsModel {
   var viewModel: ResumePublishedAppsCardViewModel {
